@@ -13,7 +13,7 @@ app.use(
 
 app.use(express.json());
 
-const movieRoutes = require("./routes/movieAPI");
+const movieRoutes = require("./routes/movieAPI.ts");
 app.use("/api", movieRoutes);
 
 http.listen(8080, () => console.log("Server running on port 8080"));
